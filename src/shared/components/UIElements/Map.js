@@ -1,10 +1,10 @@
 import React, { useRef, useEffect } from "react";
+
 import "./Map.css";
 
 const Map = props => {
   const mapRef = useRef();
 
-  //the function below removes center and zoom from props. to be used as stated, without 'props.' before them. "Object Destructuring"
   const { center, zoom } = props;
 
   useEffect(() => {
